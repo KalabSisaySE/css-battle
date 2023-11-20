@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>168. Carpet</title>
+    <style>
+      section {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative !important;
+        border: 2px solid black;
+        box-sizing: content-box !important;
+      }
+      html {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: gainsboro !important;
+      }
+      * {
+        margin: 0;
+      }
+      section,
+      section * {
+        background: #8c80bb;
+      }
+      section * {
+        position: absolute;
+      }
+      p,
+      p ~ * {
+        left: 100px;
+        top: 50px;
+        aspect-ratio: 1;
+      }
+      p {
+        width: 200px;
+        background: #fcdfeb;
+      }
+      p ~ * {
+        width: 40px;
+      }
+      h5 {
+        top: 90px;
+        left: 220px;
+      }
+      h4,
+      h3 {
+        left: 140px;
+        top: 130px;
+      }
+      h3,
+      h1 {
+        top: 210px;
+      }
+      h1 {
+        left: 260px;
+      }
+      h2 {
+        top: 170px;
+      }
+      #a {
+        left: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p></p>
+      <h6></h6>
+      <h5></h5>
+      <h4></h4>
+      <h3></h3>
+      <h2></h2>
+      <h2 id="a"></h2>
+      <h1></h1>
+    </section>
+  </body>
+</html>
