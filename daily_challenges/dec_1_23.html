@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dec-1-2023</title>
+    <style>
+      section {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative !important;
+        border: 2px solid black;
+        box-sizing: content-box !important;
+      }
+      html {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: gainsboro !important;
+      }
+      * {
+        margin: 0;
+        background: #486841;
+      }
+      section * {
+        position: absolute;
+      }
+      p,
+      h6 {
+        top: 70px;
+        width: 240px;
+        height: 160px;
+        clip-path: polygon(0 50%, 41.4%0, 100%0, 100%100%, 41.4%100%);
+      }
+      p {
+        background: #6fb440;
+        transform: scaleX(-1);
+      }
+      h6 {
+        background: #aceb3f;
+        left: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p></p>
+      <h6></h6>
+    </section>
+  </body>
+</html>
