@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /px>
+    <title>dec-14-2023</title>
+    <style>
+      section {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative !important;
+        border: 2px solid black;
+        box-sizing: content-box !important;
+      }
+      html {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: gainsboro !important;
+      }
+
+      * {
+        margin: 0;
+        background: #d4effc;
+      }
+      p,
+      p ~ * {
+        position: absolute;
+        rotate: 45deg;
+        aspect-ratio: 1;
+        background: #7bafde;
+        width: 40px;
+      }
+      p {
+        background: #000039;
+        width: 80px;
+        top: 110px;
+        left: 160px;
+      }
+      h6,
+      h5 {
+        background: #6867d4;
+        top: 102px;
+        left: 123px;
+      }
+      h5 {
+        left: 236px;
+      }
+      h4,
+      h3 {
+        top: 130px;
+        left: 95px;
+      }
+      h3 {
+        left: 265px;
+      }
+      h3 ~ * {
+        left: 180px;
+        top: 101px;
+      }
+      h1 {
+        top: 215px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p></p>
+      <h6></h6>
+      <h5></h5>
+      <h4></h4>
+      <h3></h3>
+      <h2></h2>
+      <h1></h1>
+    </section>
+  </body>
+</html>
