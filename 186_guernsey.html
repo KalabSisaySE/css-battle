@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>186. Guernsey</title>
+    <style>
+      section {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative !important;
+        border: 2px solid black;
+        box-sizing: content-box !important;
+      }
+      html {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: gainsboro !important;
+      }
+      * {
+        margin: 0;
+        background: #fff;
+      }
+      p,
+      p ~ * {
+        position: absolute;
+        background: #e8112d;
+        width: 80px;
+        height: 400px;
+        left: 160px;
+      }
+      h2,
+      h6 {
+        rotate: 90deg;
+        top: -50px;
+      }
+      h2,
+      h3 {
+        background: #f9dd16;
+        width: 40px;
+        height: 230px;
+        top: 35px;
+        left: 180px;
+        clip-path: polygon(
+          0 0,
+          25%7%,
+          25%94%,
+          0 100%,
+          100%100%,
+          75%94%,
+          75%7%,
+          100%0
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p></p>
+      <h6></h6>
+      <h3></h3>
+      <h2></h2>
+    </section>
+  </body>
+</html>
