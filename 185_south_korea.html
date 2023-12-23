@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>185. South Korea</title>
+    <style>
+      section {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative !important;
+        border: 2px solid black;
+        box-sizing: content-box !important;
+      }
+      html {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: gainsboro !important;
+      }
+
+      * {
+        margin: 0;
+        background: #fff;
+      }
+      section > *,
+      #z {
+        position: absolute;
+      }
+      h6,
+      h6 ~ * {
+        border-radius: 50%;
+        width: 120px;
+        aspect-ratio: 1;
+        top: 90px;
+        left: 140px;
+        background: #cd2e3a;
+        clip-path: inset(0 0 50%);
+      }
+      h5,
+      h3 {
+        background: #0047a0;
+      }
+      h5,
+      h4 {
+        rotate: 180deg;
+      }
+      h3,
+      h4 {
+        width: 60px;
+        left: 200px;
+        top: 120px;
+      }
+      h4 {
+        left: 140px;
+      }
+      h1 {
+        display: flex;
+        gap: 6px;
+      }
+      p {
+        width: 10px;
+        height: 60px;
+        background: #000;
+      }
+      #z {
+        height: 6px;
+        width: 46px;
+        left: -2px;
+        top: 27px;
+        background: #fff;
+      }
+      h1 {
+        rotate: 30deg;
+        top: 66px;
+        left: 85px;
+      }
+      #b,
+      #d {
+        rotate: -30deg;
+        top: 174px;
+      }
+      #c,
+      #d {
+        left: 273px;
+        top: 66px;
+      }
+      #c {
+        top: 174px;
+      }
+      #y {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>
+        <p id="y"></p>
+        <p id="y"></p>
+        <p id="y"></p>
+        <p id="z"></p>
+      </h1>
+      <h1 id="b">
+        <p id="y"></p>
+        <p></p>
+        <p id="y"></p>
+        <p id="z"></p>
+      </h1>
+      <h1 id="c">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p id="z"></p>
+      </h1>
+      <h1 id="d">
+        <p></p>
+        <p id="y"></p>
+        <p></p>
+        <p id="z"></p>
+      </h1>
+      <h6></h6>
+      <h5></h5>
+      <h4></h4>
+      <h3></h3>
+    </section>
+  </body>
+</html>
