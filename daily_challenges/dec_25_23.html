@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dec-25-23</title>
+    <style>
+      section {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative !important;
+        border: 2px solid black;
+        box-sizing: content-box !important;
+      }
+      html {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: gainsboro !important;
+      }
+
+      * {
+        margin: 0;
+        background: #bd3e4b;
+      }
+      section * {
+        position: absolute;
+      }
+      p,
+      h5,
+      h4 {
+        border-radius: 50px;
+        height: 60px;
+        top: 120px;
+        left: 110px;
+      }
+      p {
+        width: 180px;
+      }
+      h5,
+      h4 {
+        width: 120px;
+        rotate: 45deg;
+        top: 171px;
+        left: 161px;
+      }
+      h4 {
+        rotate: -45deg;
+        left: 118px;
+      }
+      h4 ~ * {
+        border-radius: 50%;
+        aspect-ratio: 1;
+        width: 20px;
+      }
+      section,
+      h1 {
+        background: #14313e;
+      }
+      h2 {
+        background: #f16348;
+        top: 140px;
+        left: 190px;
+      }
+      #b {
+        top: 170px;
+      }
+      h3 {
+        width: 80px;
+        top: 50px;
+        left: 160px;
+      }
+      h1 {
+        top: 78px;
+        left: 175px;
+      }
+      #a {
+        left: 205px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p></p>
+      <h6></h6>
+      <h5></h5>
+      <h4></h4>
+      <h3></h3>
+      <h2></h2>
+      <h2 id="b"></h2>
+      <h1></h1>
+      <h1 id="a"></h1>
+    </section>
+  </body>
+</html>
