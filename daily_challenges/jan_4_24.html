@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-01-2024</title>
+    <style>
+      section {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative !important;
+        border: 2px solid black;
+        box-sizing: content-box !important;
+      }
+      html {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: gainsboro !important;
+      }
+
+      * {
+        margin: 0;
+        background: #7ea26f;
+      }
+      p,
+      p ~ * {
+        position: absolute;
+        background: #204f23;
+        width: 160px;
+        height: 20px;
+        top: 70px;
+        left: 120px;
+      }
+      h6 {
+        top: 210px;
+      }
+      h5,
+      h4 {
+        width: 50px;
+        top: 140px;
+        left: 140px;
+      }
+      h4 {
+        left: 210px;
+      }
+      h4 ~ * {
+        width: 80px;
+        height: 70px;
+        left: 160px;
+      }
+      h2 {
+        top: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p></p>
+      <h6></h6>
+      <h5></h5>
+      <h4></h4>
+      <h3></h3>
+      <h2></h2>
+    </section>
+  </body>
+</html>
