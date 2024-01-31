@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>31-01-2024</title>
+    <style>
+      section {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative !important;
+        border: 2px solid black;
+        box-sizing: content-box !important;
+      }
+      html {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background: gainsboro !important;
+      }
+
+      * {
+        margin: 0;
+        background: #0d2328;
+      }
+      p,
+      p ~ * {
+        position: absolute;
+        aspect-ratio: 1;
+        border: 25px solid#23A440;
+        border-radius: 50%;
+        width: 200px;
+        top: 25px;
+        left: 75px;
+        clip-path: inset(0 50% 0 0);
+      }
+      h6,
+      h4 {
+        rotate: 180deg;
+      }
+      h6,
+      h5 {
+        border-color: #80cdf6;
+      }
+      h6 ~ * {
+        width: 100px;
+        top: 75px;
+        left: 125px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p></p>
+      <h6></h6>
+      <h5></h5>
+      <h4></h4>
+    </section>
+  </body>
+</html>
